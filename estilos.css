@@ -227,7 +227,6 @@ input{
     max-width: 1240px;
     margin: auto;
     width: 80%;
-    margin-top: 30px;
 }
 
 #librillo p {
@@ -241,6 +240,7 @@ input{
 
 #librillo article {
     position: relative;
+    margin-top: 30px;
 } 
 
 #gama {
@@ -249,11 +249,11 @@ input{
     max-width: 1240px;
     margin: auto;
     width: 80%;
-    margin-top: 30px;
 }
 
 #gama  img{
     width: 100%;
+    margin-top: 30px;
 }
 
 #gama  p {
@@ -280,22 +280,110 @@ footer img{
 }
 
 @media screen and (max-width: 1024px) {
+
+    header {
+        position:initial;
+        justify-content: center;
+        display: flex;
+    }
+    
+    header img{
+        width: 50%;
+    }
+    
     #remera {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
 
+    #remera article img{
+        height: 100%;
+    }
+
     body{
         font-size: 1em;
     }
+
+    #afiche{
+        display: flex;
+        height: auto;
+        gap: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    #afiche img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #afiche article{
+        height: 200%;
+        width: 50%;
+    }
+
+    #tipo {
+        margin: 0px 150px;
+        display: flex;
+        justify-content: center;
+        margin: 0px 30px;
+    }
+    
+    #tipo video{
+        width: 100%;
+    }
+    
+    #tipo p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #tipo article {
+        position: relative;
+
+    }
+
+    input{
+        display: none;
+    }
+
+    
+
+    #librillo{
+        display: flex;
+        justify-content: center;
+        max-width: 1240px;
+        margin: auto;
+        width: 80%;
+    }
+    
+    #librillo video{
+        width: 100%;
+    }
+    
+    #librillo p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #librillo article {
+        position: relative;
+    } 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     #afiche{
         display: flex;
         flex-direction: column;
-        height: 130vh;
+        height: auto;
         gap: 20px;
         justify-content: center;
         margin: auto;
