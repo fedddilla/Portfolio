@@ -383,7 +383,7 @@ footer img{
     #afiche{
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 130vh;
         gap: 20px;
         justify-content: center;
         margin: auto;
