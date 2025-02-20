@@ -10,15 +10,18 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
- 
 }
 
 body{
     font-family: "Manrope", serif;
     font-weight: 900;
     font-size: 2em;
-    width: 1200px;
-    margin: auto;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url(img/fondo-20.png);
+    background-size: cover;
+    background-position: center;
 }
 
 p{
@@ -44,19 +47,23 @@ article{
 
 header {
     position: absolute;
+    max-width: 1240px;
+    margin: auto;
+    left: 250px;
 }
 
 header img{
-    width: 60%;
+    width: 30%;
     height: auto;
 }
 
 #intro{
     display: flex;
     justify-content: center;
-    align-items: center; 
     height: 80vh;
-    gap: 20px;   
+    gap: 20px;
+    max-width: 1240px;
+    margin: auto;
 }
 
 #intro article img{
@@ -75,12 +82,9 @@ header img{
     display: flex;
     justify-content: center; 
     align-items: center;
+    width: 50%;
 }
 
-
-#intro img {
-    width: 100%;
-}
 
 #intro p{
     position: absolute;
@@ -95,6 +99,7 @@ header img{
     gap: 30px;
     width: 100%;
     justify-content: center;
+    margin: auto;
 }
 
 #afiche img{
@@ -146,20 +151,19 @@ header img{
     
 input{
     font-family: 'MiFuente';
-    max-width: 1240px;
     height: auto;
     font-size: 4em;
     padding: 20px;
     border-radius: 8px;
     border-color: rgb(188, 175, 203);
-    margin: 40px;
 }
-
 
 #flexremera{
     display: flex;
     justify-content: center;
     align-items: center;  
+    margin: auto;
+    max-width: 1240px;
 }
 
 #remera{
@@ -212,6 +216,9 @@ input{
 .horizontal{
     display: flex;
     justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+    width: 100%;
 }
 
 .horizontal img{
@@ -231,6 +238,15 @@ input{
     position: relative;
 } 
 
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+footer img{
+    width: 50%;
+}
 
 
 @media all and (min-width:768px) {
