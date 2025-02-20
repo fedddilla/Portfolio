@@ -30,10 +30,6 @@ p{
     transition: opacity 0.3s ease;
 }
 
-section{
-    margin-top: 30px;
-}
-
 .hover:hover p {
     display: flex;
     width: 100%;
@@ -64,6 +60,7 @@ header img{
     gap: 20px;
     max-width: 1240px;
     margin: auto;
+    margin-top: 30px;
 }
 
 #intro article img{
@@ -98,6 +95,7 @@ header img{
     gap: 30px;
     justify-content: center;
     margin: auto;
+    margin-top: 30px;
 }
 
 #afiche img{
@@ -127,6 +125,7 @@ header img{
     display: flex;
     justify-content: center;
     margin: 40px;
+    margin-top: 30px;
 }
 
 #tipo video{
@@ -160,6 +159,7 @@ input{
     max-width: 1240px;
     margin: auto;
     width: 80%;
+    margin-top: 30px;
 }
 
 #flexremera{
@@ -168,6 +168,7 @@ input{
     align-items: center;  
     margin: auto;
     max-width: 1240px;
+    margin-top: 30px;
 }
 
 #remera{
@@ -318,7 +319,6 @@ footer img{
     
     #tipo video{
         width: 100%;
-        margin-top: 30px;
     }
     
     #tipo p {
