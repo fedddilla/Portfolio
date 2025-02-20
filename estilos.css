@@ -85,7 +85,6 @@ header img{
     width: 50%;
 }
 
-
 #intro p{
     position: absolute;
     text-align: center;
@@ -97,16 +96,13 @@ header img{
     display: flex;
     height: 90vh;
     gap: 30px;
-    width: 100%;
     justify-content: center;
     margin: auto;
 }
 
 #afiche img{
-    object-fit: cover;
     display: block;
     transition: 0.3s;
-
 }
 
 #afiche article{
@@ -218,7 +214,7 @@ input{
     justify-content: center;
     max-width: 1240px;
     margin: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .horizontal img{
@@ -246,13 +242,4 @@ footer{
 
 footer img{
     width: 50%;
-}
-
-
-@media all and (min-width:768px) {
-    
-    body {
-        margin: 0px 30px;
-    }
-
 }
