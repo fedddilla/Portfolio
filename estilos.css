@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@font-face {
+    font-family: 'MiFuente';
+    src: url(Web-TT/FEDEFONT.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ 
+}
+
+body{
+    font-family: "Manrope", serif;
+    font-weight: 900;
+    font-size: 2em;
+    width: 1200px;
+    margin: auto;
+}
+
+p{
+    display: none;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+article{
+    margin-top: 30px;
+}
+
+.hover:hover p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.hover:hover video, .hover:hover img{
+    filter: grayscale(100%) brightness(40%);
+    transition: 0.3s;
+}
+
+header {
+    position: absolute;
+}
+
+header img{
+    width: 60%;
+    height: auto;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80vh;
+    gap: 20px;   
+}
+
+#intro article img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+#intro video{
+    height: 80vh;
+}
+
+#intro article {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#intro img {
+    width: 100%;
+}
+
+#intro p{
+    position: absolute;
+    text-align: center;
+    top: 35%;
+}
+
+
+#afiche{
+    display: flex;
+    height: 90vh;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+#afiche img{
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+
+}
+
+#afiche article{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#afiche p{
+    position: absolute;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 40%;
+}
+
+
+#tipo {
+    margin: 0px 150px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+#tipo video{
+    max-width: 1240px;
+}
+
+#tipo p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#tipo article {
+    position: relative;
+}
+    
+input{
+    font-family: 'MiFuente';
+    max-width: 1240px;
+    height: auto;
+    font-size: 4em;
+    padding: 20px;
+    border-radius: 8px;
+    border-color: rgb(188, 175, 203);
+    margin: 40px;
+}
+
+
+#flexremera{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#remera{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 80vh;
+    gap: 20px;   
+}
+
+#remera article img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+#remera article {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#remera p{
+    position: absolute;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 35%;
+}
+
+#remera article:nth-of-type(1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#remera article:nth-of-type(2){
+    grid-column: span 1;
+    grid-row: span 1;
+    
+}
+
+#remera article:nth-of-type(3){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal img{
+    width: 100%;
+}
+
+.horizontal p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+}
+
+.horizontal article {
+    position: relative;
+} 
+
+
+
+@media all and (min-width:768px) {
+    
+    body {
+        margin: 0px 30px;
+    }
+
+}
