@@ -387,6 +387,7 @@ footer img{
         gap: 20px;
         justify-content: center;
         margin: auto;
+        width: 100%;
     }
     
     #afiche img{
