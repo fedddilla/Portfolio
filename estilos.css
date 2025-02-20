@@ -30,7 +30,7 @@ p{
     transition: opacity 0.3s ease;
 }
 
-article{
+section{
     margin-top: 30px;
 }
 
@@ -154,6 +154,14 @@ input{
     border-color: rgb(188, 175, 203);
 }
 
+#input {
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+    width: 80%;
+}
+
 #flexremera{
     display: flex;
     justify-content: center;
@@ -209,7 +217,10 @@ input{
     grid-row: span 1;
 }
 
-.horizontal{
+
+
+
+#librillo{
     display: flex;
     justify-content: center;
     max-width: 1240px;
@@ -217,11 +228,7 @@ input{
     width: 80%;
 }
 
-.horizontal img{
-    width: 100%;
-}
-
-.horizontal p {
+#librillo p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -230,7 +237,32 @@ input{
     padding: 10px;
 }
 
-.horizontal article {
+#librillo article {
+    position: relative;
+} 
+
+#gama {
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+    width: 80%;
+}
+
+#gama  img{
+    width: 100%;
+}
+
+#gama  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+}
+
+#gama article {
     position: relative;
 } 
 
@@ -242,4 +274,118 @@ footer{
 
 footer img{
     width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    #remera {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    body{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #afiche{
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+        gap: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    #afiche img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #afiche article{
+        height: 200%;
+    }
+
+    #tipo {
+        margin: 0px 150px;
+        display: flex;
+        justify-content: center;
+        margin: 0px 30px;
+    }
+    
+    #tipo video{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    #tipo p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #tipo article {
+        position: relative;
+
+    }
+
+    input{
+        display: none;
+    }
+
+    
+
+    #librillo{
+        display: flex;
+        justify-content: center;
+        max-width: 1240px;
+        margin: auto;
+        width: 80%;
+    }
+    
+    #librillo video{
+        width: 100%;
+    }
+    
+    #librillo p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #librillo article {
+        position: relative;
+    } 
+
+    #intro{
+        flex-direction: column;
+        height: 60vh;
+    }
+    
+    #intro article img{
+        width: 80%;
+    }
+    
+    #intro video{
+        height: 40vh;
+    }
+    
+    #intro article {
+        width: 100%;
+    }
+
+    header {
+        position:initial;
+    }
+    
+    header img{
+        width: 50%;
+    }
+
 }
