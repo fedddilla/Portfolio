@@ -306,7 +306,7 @@ footer img{
 
     #afiche{
         display: flex;
-        height: auto;
+        height: 200vh;
         gap: 20px;
         justify-content: center;
         margin: auto;
