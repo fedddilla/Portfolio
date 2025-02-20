@@ -274,6 +274,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     padding: 40px;
+    color: black;
 }
 
 footer img{
